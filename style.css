@@ -86,13 +86,56 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+
+.ex-9-img:hover {
+    filter: sepia(1);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 1s linear infinite;
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    } 
+
+    100% {
+        transform: rotate(0deg);
+    } 
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: rotate-1 1s linear ;
+}
+
+@keyframes rotate-1 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    0% {
+        transform: rotate(45deg);
+    }
+
+    0% {
+        transform: rotate(45deg);
+    }
+
+    0% {
+        transform: rotate(45deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
